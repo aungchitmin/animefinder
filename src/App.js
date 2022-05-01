@@ -176,14 +176,16 @@ const App = () => {
         </div>
         <ScrollToTop />
         <div className='footer1'>
-          <span>This App use <a href='https://jikan.moe/'>Jikan API</a></span>
+          <span>This App utilizes <a href='https://jikan.moe/'>Jikan API</a></span>
           <span>Inspired by <a href='https://animeflow.netlify.app/'>Anime Flow</a></span>
         </div>
         <div className='footer2'>
           <p>&copy; 2022 coded by ACM</p>
           <div>
-          <a href='https://www.facebook.com/acmisacm/' target='_blank'><FontAwesomeIcon icon={faFacebook} className='icon' /></a>
-          <a href='#'><FontAwesomeIcon icon={faGithub} className='icon' /></a>
+          <a href='https://www.facebook.com/acmisacm/' target='_blank' rel='noreferrer' style={{color: "blue"}}>
+            <FontAwesomeIcon icon={faFacebook} className='icon' /></a>
+          <a href='https://github.com/aungchitmin' target='_blank' rel='noreferrer' style={{color: "black"}}>
+            <FontAwesomeIcon icon={faGithub} className='icon' /></a>
           </div>
         </div>
       </div>

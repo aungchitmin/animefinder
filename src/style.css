@@ -149,8 +149,9 @@ html {
         right: 25px;
         background-color: #2f3338;
         color: white;
-        padding: 10px;
-        border-radius: 50px;
+        padding: 5px;
+        border-radius: 8px;
+        opacity: 0.5;
     }
 }
 
@@ -169,6 +170,7 @@ html {
 
 .footer2 {
     text-align: center;
+    margin-bottom: 10px;
 }
 
 .icon {

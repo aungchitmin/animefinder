@@ -1,4 +1,6 @@
 import {useState, useEffect} from "react"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faAnglesUp } from "@fortawesome/free-solid-svg-icons"
 
 function ScrollToTop() {
     const [isVisible, setIsVisible] = useState(false)
@@ -22,7 +24,7 @@ function ScrollToTop() {
         }
       )
     }
-
+    
     useEffect(() => {
       window.addEventListener("scroll", toggleVisibility);
     }, [])
@@ -31,7 +33,7 @@ function ScrollToTop() {
     <>
       {isVisible && 
         <div className="scrolltop" onClick={scrollTop}>
-          Top
+          <FontAwesomeIcon icon={faAnglesUp} className='icon'/>
         </div>}
     </>
   )
