@@ -1,0 +1,179 @@
+html {
+    background-color: #d1d1d1d1;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+}
+
+.title {
+    text-align: center;
+    margin: 10px;
+}
+
+.searchformsticky {
+    position: sticky;
+    top: 3px;
+    z-index: 99;
+}
+
+.searchform {
+    margin: 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search {
+    width: 400px;
+    height: 30px;
+    border: 2px solid #663b3b;
+    font-size: 1em;
+}
+
+.searchbotton {
+    height: 30px;
+    margin-left: 5px;
+    background-color: floralwhite;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.searchbotton:hover {
+    color: rgb(0, 81, 255);
+}
+
+.notice {
+    text-align: center;
+    font-size: 0.9em;
+    opacity: 50%;
+}
+
+.genresearchbottom {
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+    height: 30px;
+    background-color: floralwhite;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.genresearchbottom:hover {
+    color: rgb(0, 81, 255);
+}
+
+.noresult {
+    margin: 10px;
+    padding: 0 40px;
+}
+
+.allboxes {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    margin: 10px;
+    margin-top: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    background-color: #4d6785;
+    border: 1px solid #0f0f0f;
+    color: white;
+    height: 45px;
+    width: 95px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+.selectedpanel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+.moodtext {
+    text-align: center;
+    margin: 5px;
+}
+
+.allanimecards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.animecard {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #0f0f0f;
+    width: 182px;
+    height: 330px;
+    overflow: hidden;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    text-align: center;
+    border-radius: 15px;
+    background-color: gold;
+}
+
+.animetitle {
+    margin: 5px;
+    padding-bottom: 15px;
+    font-size: 0.9em;
+}
+@media (max-width: 500px) {
+    .animetitle {
+        overflow: scroll;
+    }
+    .scrolltop {
+        display: block;
+        position: fixed;
+        z-index: 999;
+        bottom: 70px;
+        right: 25px;
+        background-color: #2f3338;
+        color: white;
+        padding: 10px;
+        border-radius: 50px;
+    }
+}
+
+@media (min-width: 501px) {
+    .scrolltop {
+        display: none;
+    }
+}
+
+.footer1 {
+    display: flex;
+    margin: 8px auto;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer2 {
+    text-align: center;
+}
+
+.icon {
+    font-size: 30px;
+    margin: 3px;
+    margin-top: 5px;
+    padding: 5px;
+}
