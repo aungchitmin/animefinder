@@ -135,7 +135,7 @@ const App = () => {
         key={anime.mal_id}
         />
     ))
-    
+    console.log('hi')
   //to show search by genre results ,component
   const genreresult = genreAnime.length > 0 ? genreAnime.map(anime => (
     <AnimeCard1
