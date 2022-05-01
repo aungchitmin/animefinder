@@ -36,7 +36,7 @@ const App = () => {
     fetchbyBoxes(genreArrayString, pageCount); //it somehow works but i don't know why the actual value is delayed
     setTest([false, true])
   }
-//console.log(genresearchcheck)
+
 
   //api fetch for search button, searching by name
   const fetchAnime = async(query) => {
@@ -57,7 +57,7 @@ const App = () => {
     
     setAnimeList(data.results)
   }
-//console.log(animeList)
+
   //api fetch for genre search button
   const fetchbyBoxes = async(query, pageCount) => {
     if(query) {
@@ -77,7 +77,7 @@ const App = () => {
       setPageCount(prev => prev - 1) //bcoz it increase whenever search btn is clicked
     }
   }
-  //console.log(genreAnime)
+  
   //to add indicator around boxes and to show result boxes below
   function toggle(id, item) {
     setGenreData(prev => {
