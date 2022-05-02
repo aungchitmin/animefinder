@@ -8,6 +8,7 @@ import AnimeCard2 from "./components/AnimeCard2"
 import ScrollToTop from './components/ScrollToTop';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faGithub } from '@fortawesome/free-brands-svg-icons'
+
 const App = () => {
   const [search, setSearch] = useState("")
   const [animeList, setAnimeList] = useState([])
@@ -135,7 +136,7 @@ const App = () => {
         key={anime.mal_id}
         />
     ))
-    
+
   //to show search by genre results ,component
   const genreresult = genreAnime.length > 0 ? genreAnime.map(anime => (
     <AnimeCard1
