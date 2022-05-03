@@ -190,12 +190,13 @@ html {
 }
 
 .footer2 {
-    text-align: center;
-    margin-bottom: 10px;
+    text-align: center; 
+    margin-bottom: 5px;
 }
 
 .footer3 {
     text-align: center;
+    margin-bottom: 10px;
 }
 
 .creditlinks {
