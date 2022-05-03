@@ -142,7 +142,7 @@ const App = () => {
     <AnimeCard1
         anime={anime}
         key={anime.mal_id} />
-    )) : <p className='noresult'>Sorry, there is no matching result for your search. Please try again.</p>
+    )) : <p className='noresult'><q>Sorry, there is no matching result for your search. Please try again.</q></p>
    
   //i put this NoticeText at the very top and didnot work. it seems code flow is the key
   const NoticeText = <p className='notice'>
@@ -150,7 +150,7 @@ const App = () => {
   return(
     <>
       <div className='main'>
-        <h2 className='title'>Anime Series Finder</h2>
+        <h2 className='title' style={{color: "#26454e"}}>Anime Series Finder</h2>
         <Search HandleSearch={HandleSearch}
                 search={search}
                 setSearch={setSearch}
@@ -177,17 +177,20 @@ const App = () => {
         </div>
         <ScrollToTop />
         <div className='footer1'>
-          <span>This App utilizes <a href='https://jikan.moe/'>Jikan API</a></span>
-          <span>Inspired by <a href='https://animeflow.netlify.app/'>Anime Flow</a></span>
+          <div className='creditblocks'>This App utilizes <a className='creditlinks' href='https://jikan.moe/'>Jikan API</a></div>
+          <div className='creditblocks'>Inspired by <a className='creditlinks' href='https://animeflow.netlify.app/'>Anime Flow</a></div>
         </div>
         <div className='footer2'>
-          <p>&copy; 2022 coded by ACM</p>
+          <p>&copy; 2022 coded by Sea Lion</p>
           <div>
           <a href='https://www.facebook.com/acmisacm/' target='_blank' rel='noreferrer' style={{color: "blue"}}>
             <FontAwesomeIcon icon={faFacebook} className='icon' /></a>
           <a href='https://github.com/aungchitmin' target='_blank' rel='noreferrer' style={{color: "black"}}>
             <FontAwesomeIcon icon={faGithub} className='icon' /></a>
           </div>
+        </div>
+        <div className='footer3'>
+          <p>Big Thanks to <strong>Bob Ziroll &hearts;</strong></p>
         </div>
       </div>
     </>

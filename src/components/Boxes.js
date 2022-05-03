@@ -1,6 +1,6 @@
 function Boxes(props) {
   const styles = {
-      border: props.on ? "3px solid #b9ff0a" : ""
+      border: props.on ? "4px solid #ffeb3b" : ""
   }
  
   return (

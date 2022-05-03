@@ -1,12 +1,12 @@
 function Boxresult(props) {
   const selectedboxes = {
-    backgroundColor: "#2f3338",
+    backgroundColor: "#141414",
     border: props.item.on ? "1px solid black" : "",
     padding: props.item.on ? "7px" : "",
     borderRadius: "5px",
     margin: props.item.on ? "5px" : "",
     marginLeft: props.item.on ? "7px" : "",
-    color: "rgb(34 249 180)",
+    color: "#ffea82",
     fontSize: "0.9em"
 }
   return (

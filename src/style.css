@@ -1,5 +1,5 @@
 html {
-    background-color: #d1d1d1d1;
+    background-color: #74ff82;
 }
 
 * {
@@ -82,9 +82,9 @@ html {
 }
 
 .box {
-    background-color: #4d6785;
-    border: 1px solid #0f0f0f;
-    color: white;
+    background-color: #4e3ac9;
+    border: 1px solid #607d8b;
+    color: #fffb73;
     height: 45px;
     width: 95px;
     margin: 10px;
@@ -108,6 +108,7 @@ html {
 .moodtext {
     text-align: center;
     margin: 5px;
+    color: #26454e;
 }
 
 .allanimecards {
@@ -136,6 +137,7 @@ html {
     margin: 5px;
     padding-bottom: 15px;
     font-size: 0.9em;
+    color: #420e15;
 }
 @media (max-width: 500px) {
     .animetitle {
@@ -166,11 +168,43 @@ html {
     margin: 8px auto;
     align-items: center;
     justify-content: space-around;
+    font-size: 0.9em;
+}
+
+@media (max-width: 500px) {
+    .creditblocks {
+        display: flex;
+        max-width: 130px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .creditlinks {
+        margin-top: 5px;
+    }
+
+    .footer2 {
+        margin-top: 20px;
+    }
 }
 
 .footer2 {
     text-align: center;
     margin-bottom: 10px;
+}
+
+.footer3 {
+    text-align: center;
+}
+
+.creditlinks {
+    text-decoration: none;
+    background-color: tomato;
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 3px;
+    color: white;
 }
 
 .icon {
